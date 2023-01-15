@@ -4,7 +4,7 @@ There are many ways to be an open source contributor, and we're here to help you
 
 * Propose ideas in our 
   [discussion forums](https://forums.tbd.website)
-* Raise an issue or feature request in our [issue tracker](LINK_HERE)  ___***FIX LINK AND REMOVE THIS NOTICE***___
+* Raise an issue or feature request in our [issue tracker](https://github.com/TBD54566975/incubation-web5-application-creator/issues)
 * Help another contributor with one of their questions, or a code review
 * Suggest improvements to our Getting Started documentation by supplying a Pull Request
 * Evangelize our work together in conferences, podcasts, and social media spaces.
@@ -17,59 +17,7 @@ ___***UPDATE TABLE OF PROJECT DEPS AND INSTALLATION NOTES***___
 
 | Requirement | Tested Version | Installation Instructions                            |
 |-------------|----------------|------------------------------------------------------|
-| Go          | 1.17.6         |[go.dev](https://go.dev/doc/tutorial/compile-install) |
-| Mage        | 1.12.1         |[magefile.org](https://magefile.org/)                 |
-| Java        | 17.0.2         | Below, recommended via [SDKMan](https://sdkman.io)   |
-
-### Go
-
-This project is written in Go, a modern, open source programming language. 
-
-You may verify your `go` installation via the terminal:
-
-```
-$> go version
-go version go1.17.6 darwin/amd64
-```
-
-If you do not have go, we recommend installing it by:
-
-#### MacOS
-
-##### Homebrew
-```
-$> brew install go
-```
-
-#### Linux
-
-See the [Go Installation Documentation](https://go.dev/doc/install).
-
-### Mage
-
-The build is run by Mage.
-
-You may verify your `mage` installation via the terminal:
-
-```
-$> mage --version
-Mage Build Tool 1.12.1
-Build Date: 2021-12-15T21:00:02Z
-Commit: 2f1ec40
-built with: go1.17.6
-```
-
-#### MacOS
-
-##### Homebrew
-
-```
-$> brew install mage
-```
-
-#### Linux
-
-Installation instructions are on the [Magefile home page](https://magefile.org/).
+| Java        | 19.0.1         | Below, recommended via [SDKMan](https://sdkman.io)   |
 
 ### Java
 
@@ -87,19 +35,19 @@ After you've installed SDKMan, you may install Java:
 #### SDKMan (cross-platform instructions)
 
 ```shell
-$> sdk install java 
+$> sdk install java 19.0.1-open
  ...
-Do you want java 17.0.2-open to be set as default? (Y/n): Y
-Setting java 17.0.2-open as default.
+Do you want java 19.0.1-open to be set as default? (Y/n): Y
+Setting java 19.0.1-open as default.
 ```
 
 You may test your installation:
 
 ```shell
 $> java -version
-openjdk version "17.0.2" 2022-01-18
-OpenJDK Runtime Environment (build 17.0.2+8-86)
-OpenJDK 64-Bit Server VM (build 17.0.2+8-86, mixed mode, sharing)
+openjdk 19.0.1 2022-10-18
+OpenJDK Runtime Environment (build 19.0.1+10-21)
+OpenJDK 64-Bit Server VM (build 19.0.1+10-21, mixed mode, sharing)
 ```
 
 ---
@@ -113,49 +61,27 @@ Consult the SDKMan documentation for more info.
 
 ---
 
-## Build (Mage)
-
-```
-$> mage build
-```
-
-## Build (Java / Gradle)
+## Build (Java / Maven)
 
 ### macOS / Linux
 ```shell
-$> ./gradlew build
+$> ./mvn clean verify
 ```
 
-### Windows
-```shell
-$> gradlew.bat build
-```
-
-## Test (Mage)
-
-```
-$> mage test
-```
-
-## Test (Java / Gradle)
+## Test (Java / Maven)
 
 ### macOS / Linux
 ```shell
-$> ./gradlew test
-```
-
-### Windows
-```shell
-$> gradlew.bat test
+$> ./mvn test
 ```
 
 ---
 **NOTE**
 
-You may also combine Gradle build targets in one call, like:
+You may also combine Maven build targets in one call, like:
 
 ```shell
-$> ./gradlew clean build test
+$> ./mvn test verify
 ```
 
 ---
@@ -165,7 +91,7 @@ $> ./gradlew clean build test
 ### Issues
 
 Anyone from the community is welcome (and encouraged!) to raise issues via 
-[GitHub Issues](LINK_HERE)  ___***FIX LINK AND REMOVE THIS NOTICE***___.
+[GitHub Issues](https://github.com/TBD54566975/incubation-web5-application-creator/issues).
 
 ### Discussions
 
@@ -175,9 +101,7 @@ We advocate an asynchronous, written debate model - so write up your thoughts an
 
 ### Continuous Integration
 
-Build and Test cycles are run on every commit to every branch on [CircleCI](LINK_HERE).
-
- ___***FIX LINK ABOVE AND REMOVE THIS NOTICE***___
+TODO - Set up once build is active
 
 ## Contribution
 

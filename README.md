@@ -1,36 +1,21 @@
-# $PROJECT_NAME README
+# Web5 Application Creator
 
-Congrats, project leads! You got a new project to grow!
+A web application and backend to create new Web5 applications. This is an early prototype that's an idea
+playground for now. The idea is to flesh out how quickly we can get developers of Web5 applications that
+first dopamine hit - of something working right from the start and easily modified to suit their needs.
 
-This stub is meant to help you form a strong community around your work. It's yours to adapt, and may 
-diverge from this initial structure. Just keep the files seeded in this repo, and the rest is yours to evolve! 
+This may:
+* Scaffold a starting point 
+* Create new applications from an example feature set
+* Take inputs from the user to customize the type of application created
 
-## Introduction
+If we host the service as an always-available backend, we can call upon it:
 
-Orient users to the project here. This is a good place to start with an assumption
-that the user knows very little - so start with the Big Picture and show how this
-project fits into it. It may be good to reference/link the broader architecture in the
-`collaboration` repo or the developer site here.
+* From a web client as a webapp
+* From a command-line terminal
 
-Then maybe a dive into what this project does.
+Additionally, that will let us maintain a catalog of capabilities and example applications, making 
+the clients require little or no update when we want to release new starter application types.
 
-Diagrams and other visuals are helpful here. Perhaps code snippets showing usage.
-
-Project leads should complete, alongside this `README`:
-* [CODEOWNERS](./CODEOWNERS) - set project lead(s)
-* [CONTRIBUTING.md](./CONTRIBUTING.md) - Fill out how to: install prereqs, build, test, run, access CI, chat, discuss, file issues
-
-The other files in this template repo may be used as-is:
-* [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-* [GOVERNANCE.md](./GOVERNANCE.md)
-* [LICENSE](./LICENSE)
-
-## Project Resources
-
-| Resource                                   | Description                                                                    |
-| ------------------------------------------ | ------------------------------------------------------------------------------ |
-| [CODEOWNERS](./CODEOWNERS)                 | Outlines the project lead(s)                                                   |
-| [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) | Expected behavior for project contributors, promoting a welcoming environment |
-| [CONTRIBUTING.md](./CONTRIBUTING.md)       | Developer guide to build, test, run, access CI, chat, discuss, file issues     |
-| [GOVERNANCE.md](./GOVERNANCE.md)           | Project governance                                                             |
-| [LICENSE](./LICENSE)                       | Apache License, Version 2.0                                                    |
+For now, we'll start with some foundational library support for the features needed, along with APIs, SPIs, 
+Implementation, and a test suite. Anything to get us moving.
