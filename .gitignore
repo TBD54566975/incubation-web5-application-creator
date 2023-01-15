@@ -1,3 +1,8 @@
-.project
 
+# Eclipse IDE 
+.project
+.classpath
+.settings
+
+# Maven Build Output
 target
